@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as  Routes ,Route} from "react-router-dom";
+import { BrowserRouter , Routes ,Route} from "react-router-dom";
 import Player from './player'
 
 
@@ -10,7 +10,7 @@ const Navbar = () => {
    <div className='nev'>
      <head>
      <Routes>
-      
+    
     <Route path='/' element={<Player />}/>
     <Route path='/player' element={<Player />}/>
     
