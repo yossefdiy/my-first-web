@@ -44,7 +44,7 @@ const Navbar = () => {
         <div class="nav__link hide">
           <button>home</button>
           <button>atwork</button>
-          <button>songs</button>
+          <button>songs5</button>
           <button>T-shirts</button>
         
         </div>
