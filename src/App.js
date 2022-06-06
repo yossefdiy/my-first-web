@@ -12,21 +12,19 @@ function App(){
 
   return (
     <BrowserRouter>
-        <Link to='/' element={<Player/>}>ertrt</Link>
-        <Link to='/player' element={<Player/>}>ertrt</Link>
+        <img src={ require('./img/img1.png') } />
+
+      <button>  <Link to='/player' element={<Player/>}>ertrt</Link></button>
+      <button>   <Link to='/' element={<p>no them</p>}>song</Link></button>
 
 
     <Routes>
 
       <Route path='/' element={<div><Player/></div>}/>
-      <Route path='/navbar' element={<Navbar />}/>
+      <Route path='/navbar' element={<div><Navbar /></div>}/>
       
     </Routes>
-    <div className='app'>NO THEM
-    <Navbar/>
-  
-
-    </div>
+  <Navbar/>
     </BrowserRouter>
 
   )}
