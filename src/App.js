@@ -12,7 +12,7 @@ function App(){
 
   return (
     <BrowserRouter>
-        <img src={ require('./img/img1.png') } />
+        <img src={ require("./img/img1.png" ) }alt="" />
 
       <button>  <Link to='/player' element={<Player/>}>ertrt</Link></button>
       <button>   <Link to='/' element={<p>no them</p>}>song</Link></button>
