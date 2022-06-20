@@ -35,6 +35,7 @@ const searchCtiy=(event)=>{
          <p>טמפרטורה</p>
          {data.main ?<p> <p>°C</p> {data.main.temp }</p>:null}
 
+
       
 
             </div>
