@@ -1,102 +1,18 @@
-.app{
-  font-size: 70px;
-  text-align: center;
-  color:white;
-}
-.h1{
-  color: #ffffff;
-font-size: 35px;  
-}
-.nev{
-  
-  text-align: center;
-  background-color:black;
-  display: flex;
- color: white;
-  font-size: 15px;
-}
-
-
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
-
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: black;
-}
-
-.nav__link {
-  position: fixed;
-  width: 94%;
-  top: 5rem;
-  left: 18px;
-  background-color: lightblue;
-}
-
-.nav__link a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.nav__link a:hover {
-  background-color: lightcoral;
-}
-
-.hide {
-  display: none;
-}
-@media screen and (min-width: 600px) {
-  .nav__link {
-    display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-  }
-
-  .nav__link a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
-  a{
-    color: #ffffff;
-  }
 body{
-  background-color: black;
-  height: 1000px;
-}
-.no-them{
-  font-size: 30px;
   width: 100%;
   height: 500px;
-  border-color: red;
-  border-style: dotted;
-   text-align: justify;
- 
+  background-color: blueviolet;
 }
-img{
-padding-left: 300px;
-}
-p{
+.app{
+  text-align: center;
+
   color: white;
 }
+input{
+
+  width: 200px;}
+
+  h1{
+    color: yellow;
+    align-items: center;
+  }
