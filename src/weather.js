@@ -28,14 +28,14 @@ const searchCtiy=(event)=>{
             onChange={event=>setCity(event.target.value)}
             onKeyPress={searchCtiy}
             />
-        
-         <p>{data.name}</p>
+         <p>מדינה</p>
          {data.sys ?<p>{data.sys.country}</p>:null}
+         <p>עיר</p>
+         {data ?<p>{data.name}</p>:null}
+         <p>טמפרטורה</p>
+         {data.main ?<p> <p>°C</p> {data.main.temp }</p>:null}
 
-       
-        {data.main ? <p>{data.main.temp}</p>:null}
-
-        {data.weather ? <p>{data.weather[0].main}</p>:null}
+      
 
             </div>
            </div> 
