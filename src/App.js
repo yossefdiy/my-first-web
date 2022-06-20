@@ -1,32 +1,23 @@
 import React from 'react';
 import './App.css';
-import Navbar from './navbar';
-import Player from './player';
-import { BrowserRouter , Routes ,Route, Link} from "react-router-dom";
 
-
+import Weather from './weather'
 
 
 function App(){
 
 
+
+   
   return (
-    <BrowserRouter>
-        <img src={ require("./img/img1.png" ) }alt="" />
+    <div className='app'>
+<h1>weather</h1>
+    
+  
 
-      <button>  <Link to='/player' element={<Player/>}>ertrt</Link></button>
-      <button>   <Link to='/' element={<p>no them</p>}>song</Link></button>
+  <Weather/>
 
-
-    <Routes>
-
-      <Route path='/' element={<div><Player/></div>}/>
-      <Route path='/navbar' element={<div><Navbar /></div>}/>
-      
-    </Routes>
-  <Navbar/>
-    </BrowserRouter>
-
-  )}
-
+    </div>
+  )
+}
 export default App
