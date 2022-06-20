@@ -11,7 +11,7 @@ function App(){
    
   return (
     <div className='app'>
-<h1>weather מזג אויר</h1>
+<h1>weather מזג אוןיר</h1>
     
   
 
