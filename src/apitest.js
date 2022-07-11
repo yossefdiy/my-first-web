@@ -4,7 +4,7 @@ import Weather from "./weather";
 
 
 
-function Api(searchCtiy){
+function Api(){
 const [data,setData] = useState({})
 
      
