@@ -39,8 +39,8 @@ function HandelFilter (event){
             onKeyPress={searchCtiy1} 
                 />
         <div className="search">
-            {Object.values (filter).map((value,key)=>{
-            return <a className="list">{JSON.stringify(value.name)}</a> 
+            {Object.values (filter).map((value)=>{
+            return <p className="list">{JSON.stringify(value.name)}</p> 
           })}
            {HandelFilter}
            </div>
