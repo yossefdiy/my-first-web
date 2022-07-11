@@ -40,7 +40,7 @@ function HandelFilter (event){
                 />
         <div className="search">
             {Object.values (filter).map((value)=>{
-            return <a className="list">{JSON.stringify(value.name)}</a> 
+            return <p className="list">{JSON.stringify(value.name)}</p> 
           })}
            {HandelFilter}
            </div>
