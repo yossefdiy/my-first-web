@@ -1,61 +1,54 @@
 import axios from "axios";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Weather from "./weather";
 
+function Api() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [selectedCity, setSelectedCity] = useState();
 
+  const searchCity = async () => {
+    setLoading(true)
+    const url1 =
+      "https://raw.githubusercontent.com/royts/israel-cities/master/israel-cities.json";
 
-function Api(){
-const [data,setData] = useState({})
+    const {data} = await axios.get(url1)
+    setData(data);
+    setLoading(false)
+  };
 
-     
+  if (!loading && !data.length) searchCity()
 
-const searchCtiy1=()=>{
-    const url1='https://raw.githubusercontent.com/royts/israel-cities/master/israel-cities.json'
-//  const url1='https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/6ee538beca8914133259b401ba47a550313e8984/countries.min.json'
-//   const url1='https://datahub.io/core/world-cities/r/world-cities.json'
-    
-        axios.get(url1).then((response)=>{
-            setData(response.data)
-            console.log(response.data)
-     })
-    }
-    
-const [filter,setFilter]= useState([])
-function HandelFilter (event){
-    const Word = event.target.value 
-    const newWord = Object.values (data).filter((value)=>{
-        return value.name.includes(Word)
-    })
-    setFilter(newWord)
+  const [filter, setFilter] = useState([]);
+  function HandleFilter(event) {
+    const Word = event.target.value;
+    const newWord = data.filter((value) => {
+      return value.name.includes(Word);
+    });
+    setFilter(newWord);
+  }
+
+  return (
+    <div className="weather">
+      <h1>{selectedCity}</h1>
+      <input
+        className="input"
+        type="text"
+        placeholder="עיר"
+        onChange={HandleFilter}
+      />
+      <div className="search">
+        {filter.map((value) => {
+          return <div className="list" onClick={() => setSelectedCity(value.name)}>{value.name}</div>;
+        })}
+        {HandleFilter}
+      </div>
+      <div />
+
+      <Weather selectedCity={selectedCity}/>
+      {loading? <span>loading please wait...</span>: ''}
+    </div>
+  );
 }
-   
-        return(
-           <div className="weather">
-        
-            <input className="input"
-            type='text'    
-          placeholder='city'
-            onChange={HandelFilter}
-            onKeyPress={searchCtiy1} 
-                />
-        <div className="search">
-            {Object.values (filter).map((value)=>{
-            return <p className="list">{JSON.stringify(value.name)}</p> 
-          })}
-           {HandelFilter}
-           </div>
-            <div/>
-        
-                    
-          
-      
-      
-<Weather/>
-            </div>
-        
-        )}
-            
-        
 
-    
-export default Api
+export default Api;
