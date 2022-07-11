@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
+import Api from './apitest'; 
 
-import Weather from './weather'
+
 
 
 function App(){
@@ -10,12 +11,14 @@ function App(){
 
    
   return (
+  
     <div className='app'>
 <h1>weather מזג אוויר</h1>
-    
-  
+<Api/> 
 
-  <Weather/>
+
+
+  
 
     </div>
   )
