@@ -49,6 +49,4 @@ function Api() {
       {loading? <span>loading please wait....</span>: ''}
     </div>
   );
-}
 
-export default Api;
