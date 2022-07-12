@@ -26,7 +26,7 @@ function Weather(props) {
           {data.main ? (
             <p>
               {" "}
-              <p>°C</p> {Math.round(data.main.temp)}
+              <p>°C*</p> {Math.round(data.main.temp)}
             </p>
           ) : null}
         </div>
