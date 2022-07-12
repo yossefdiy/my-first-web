@@ -18,7 +18,7 @@ function Api() {
   };
 
   if (!loading && !data.length) searchCity()
-   
+
   const [filter, setFilter] = useState([]);
   function HandleFilter(event) {
     const Word = event.target.value;
@@ -49,6 +49,4 @@ function Api() {
       {loading? <span>loading please wait...</span>: ''}
     </div>
   );
-}
 
-export default Api;

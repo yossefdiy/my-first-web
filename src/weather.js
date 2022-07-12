@@ -6,14 +6,14 @@ function Weather(props) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.selectedCity}&units=metric&appid=8fbf66d40976db983740788788eabe97`;
   const searchCity = () => {
       axios.get(url).then((response) => {
-        
+
         setData(response.data);
       });
   };
   if (props.selectedCity && !data.name) {
     searchCity()
   }
-  if (data.name)searchCity()
+
 
   return (
     <div className="weather">
@@ -36,4 +36,3 @@ function Weather(props) {
   );
 }
 
-export default Weather;
