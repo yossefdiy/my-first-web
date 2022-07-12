@@ -46,7 +46,7 @@ function Api() {
       <div />
 
       <Weather selectedCity={selectedCity}/>
-      {loading? <span>loading please wait....</span>: ''}
+      {loading? <span>loading please wait.....</span>: ''}
     </div>
   );
 
