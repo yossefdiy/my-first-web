@@ -28,13 +28,14 @@ body{
   border-radius: 6px;
   font-size: 16px;
   direction: rtl;
+  color: white;
 }
 .input:focus{
   outline-style: none;
 }
 .data{
   color: beige;
-  opacity: 50%;;
+
   width:400px;
   height: 400px;
   display:block;
