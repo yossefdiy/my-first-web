@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Api from "./apitest";
 
  
-function App(props) {
+function App() {
   return (
     <div className="app">
       <h1>weather מזג אוויר</h1>
