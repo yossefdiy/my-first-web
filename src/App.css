@@ -1,16 +1,29 @@
+body{
+
+
+  background-color:black;
+}
 .weather{
-  display:flex;
+  /* display:-moz-grid-line; */
   flex-direction: column;
   padding: 75px;
   justify-items: center;
+  margin: auto ;
   align-items: center;
+  
+  color: white;
+
+ 
+
 
 
 }
 .input{
+  align-items: right;
   padding: 10px;
-  width: 80%;
-  margin: auto;
+  width: 50vw;
+  margin: auto 0;
+  margin-left: auto ;
   border: 1px solid lightgray;
   border-radius: 6px;
   font-size: 16px;
@@ -20,21 +33,59 @@
   outline-style: none;
 }
 .data{
-  display:-webkit-inline-flex;
+  color: beige;
+  opacity: 50%;;
+  width:400px;
+  height: 400px;
+  display:block;
+  margin: auto ;
+  font-size: 30px;
+  font-style: oblique;
+
+  opacity: 50%;
+
 }
+
 .app{
   text-align: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 50pc;
+  background-image: url(./img/back2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  align-items: center;
+  place-items: center;
+
 }
 .list{
-  display:flex;
-  direction: rtl;
+
+  color: white;
+  display:block;  
+  width: 500px;
+  text-shadow: 1px;
+
 }
 .list:hover{
-  background-color: bisque;
+  background-color: gray;
+ 
 }
 .search{
-  width: 80%;
+  font-size: 22px;
+  width: 50vw;
   overflow: hidden;
   height:100px;
-  overflow-y: scroll ;
+  overflow-y: auto ;
+  margin: auto;
+ display: block;
+}
+.state{
+margin-right: 20px;}
+.city{
+  margin-right:20px;
+}
+.tmp{
+  display:block;
+  margin-right:20px;
+  font-size:50px;
 }
