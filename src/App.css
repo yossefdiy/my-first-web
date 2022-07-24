@@ -34,14 +34,16 @@ body{
   outline-style: none;
 }
 .data{
+    opacity:50%;;
   color: beige;
-
+  background-color: black;
   width:400px;
   height: 400px;
   display:block;
   margin: auto ;
   font-size: 30px;
   font-style: oblique;
+  border-radius: 10%;
 
  
 
@@ -52,11 +54,12 @@ body{
   font-size: 20px;
   color: white;
   text-shadow: 50pc;
-  background-image: url(./img/back2.jpg);
+  background-image: url(./img/back3.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   align-items: center;
   place-items: center;
+  
 
 }
 .list{
